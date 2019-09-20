@@ -16,11 +16,13 @@
 
 PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/bin/dpmd:system/bin/dpmd \
+    vendor/nubia/nx611j/proprietary/bin/wfdservice:system/bin/wfdservice \
     vendor/nubia/nx611j/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/nubia/nx611j/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/nubia/nx611j/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/nubia/nx611j/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
     vendor/nubia/nx611j/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
+    vendor/nubia/nx611j/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/nubia/nx611j/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/nubia/nx611j/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/nubia/nx611j/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
@@ -34,6 +36,8 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/nubia/nx611j/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/nubia/nx611j/proprietary/vendor/etc/permissions/vendor-qti-hardware-alarm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-alarm.xml \
+    vendor/nubia/nx611j/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
+    vendor/nubia/nx611j/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
     vendor/nubia/nx611j/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/nubia/nx611j/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/nubia/nx611j/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
@@ -47,12 +51,15 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/nubia/nx611j/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/nubia/nx611j/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/nubia/nx611j/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/nubia/nx611j/proprietary/lib/lib-imscamera.so:system/lib/lib-imscamera.so \
     vendor/nubia/nx611j/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
     vendor/nubia/nx611j/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
     vendor/nubia/nx611j/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
+    vendor/nubia/nx611j/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/nubia/nx611j/proprietary/lib/libGPTEE_system.so:system/lib/libGPTEE_system.so \
     vendor/nubia/nx611j/proprietary/lib/libNubiaImageAlgorithm.so:system/lib/libNubiaImageAlgorithm.so \
+    vendor/nubia/nx611j/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
     vendor/nubia/nx611j/proprietary/lib/libQTEEConnector_system.so:system/lib/libQTEEConnector_system.so \
     vendor/nubia/nx611j/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
     vendor/nubia/nx611j/proprietary/lib/libarcsoft_beautyshot_image_algorithm.so:system/lib/libarcsoft_beautyshot_image_algorithm.so \
@@ -68,6 +75,8 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/nubia/nx611j/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
     vendor/nubia/nx611j/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
+    vendor/nubia/nx611j/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
+    vendor/nubia/nx611j/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
     vendor/nubia/nx611j/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/nubia/nx611j/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/nubia/nx611j/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
@@ -79,6 +88,22 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
     vendor/nubia/nx611j/proprietary/lib/libtrueportrait.so:system/lib/libtrueportrait.so \
     vendor/nubia/nx611j/proprietary/lib/libvendorconn.so:system/lib/libvendorconn.so \
+    vendor/nubia/nx611j/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
+    vendor/nubia/nx611j/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
+    vendor/nubia/nx611j/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
+    vendor/nubia/nx611j/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
+    vendor/nubia/nx611j/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
+    vendor/nubia/nx611j/proprietary/lib/libwfdmmsink.so:system/lib/libwfdmmsink.so \
+    vendor/nubia/nx611j/proprietary/lib/libwfdmmsrc.so:system/lib/libwfdmmsrc.so \
+    vendor/nubia/nx611j/proprietary/lib/libwfdnative.so:system/lib/libwfdnative.so \
+    vendor/nubia/nx611j/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
+    vendor/nubia/nx611j/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
+    vendor/nubia/nx611j/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
+    vendor/nubia/nx611j/proprietary/lib/libwfduibcinterface.so:system/lib/libwfduibcinterface.so \
+    vendor/nubia/nx611j/proprietary/lib/libwfduibcsink.so:system/lib/libwfduibcsink.so \
+    vendor/nubia/nx611j/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
+    vendor/nubia/nx611j/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
+    vendor/nubia/nx611j/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
     vendor/nubia/nx611j/proprietary/lib/libxt_native.so:system/lib/libxt_native.so \
     vendor/nubia/nx611j/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
     vendor/nubia/nx611j/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
@@ -96,6 +121,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/nubia/nx611j/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/nubia/nx611j/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/nubia/nx611j/proprietary/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/nubia/nx611j/proprietary/lib64/lib-imscamera.so:system/lib64/lib-imscamera.so \
     vendor/nubia/nx611j/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/nubia/nx611j/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
@@ -105,9 +131,11 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/lib64/libAltek_Alignment.so:system/lib64/libAltek_Alignment.so \
     vendor/nubia/nx611j/proprietary/lib64/libBigAperture.so:system/lib64/libBigAperture.so \
     vendor/nubia/nx611j/proprietary/lib64/libBuffer.so:system/lib64/libBuffer.so \
+    vendor/nubia/nx611j/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
     vendor/nubia/nx611j/proprietary/lib64/libGPTEE_system.so:system/lib64/libGPTEE_system.so \
     vendor/nubia/nx611j/proprietary/lib64/libIndependenceUtil.so:system/lib64/libIndependenceUtil.so \
     vendor/nubia/nx611j/proprietary/lib64/libNubiaImageAlgorithm.so:system/lib64/libNubiaImageAlgorithm.so \
+    vendor/nubia/nx611j/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
     vendor/nubia/nx611j/proprietary/lib64/libPrettyWaterMark.so:system/lib64/libPrettyWaterMark.so \
     vendor/nubia/nx611j/proprietary/lib64/libQTEEConnector_system.so:system/lib64/libQTEEConnector_system.so \
     vendor/nubia/nx611j/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
@@ -133,6 +161,8 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/nubia/nx611j/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/nubia/nx611j/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
+    vendor/nubia/nx611j/proprietary/lib64/libmmparser.so:system/lib64/libmmparser.so \
+    vendor/nubia/nx611j/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
     vendor/nubia/nx611j/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
     vendor/nubia/nx611j/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
     vendor/nubia/nx611j/proprietary/lib64/libmorpho_panorama_gp.so:system/lib64/libmorpho_panorama_gp.so \
@@ -155,6 +185,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/lib64/libswscale.so:system/lib64/libswscale.so \
     vendor/nubia/nx611j/proprietary/lib64/libtrueportrait.so:system/lib64/libtrueportrait.so \
     vendor/nubia/nx611j/proprietary/lib64/libvendorconn.so:system/lib64/libvendorconn.so \
+    vendor/nubia/nx611j/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
     vendor/nubia/nx611j/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
     vendor/nubia/nx611j/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
     vendor/nubia/nx611j/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
@@ -216,6 +247,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/nubia/nx611j/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/nubia/nx611j/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
+    vendor/nubia/nx611j/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
     vendor/nubia/nx611j/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/nubia/nx611j/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
     vendor/nubia/nx611j/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
@@ -258,6 +290,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.0-service.widevine.rc \
     vendor/nubia/nx611j/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/nubia/nx611j/proprietary/vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@3.0-service-qti.rc \
+    vendor/nubia/nx611j/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/nubia/nx611j/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/nubia/nx611j/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.0-service.rc \
     vendor/nubia/nx611j/proprietary/vendor/etc/init/vendor.qti.gnss@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.gnss@1.0-service.rc \
@@ -320,6 +353,9 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@1.1_vendor.so \
+    vendor/nubia/nx611j/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
+    vendor/nubia/nx611j/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0-impl.so \
+    vendor/nubia/nx611j/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.api@1.0.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.constants@1.0.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.constants@2.0.so \
@@ -847,6 +883,11 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpptestutils.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libvqzip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvqzip.so \
+    vendor/nubia/nx611j/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
+    vendor/nubia/nx611j/proprietary/vendor/lib/libwfdhaldsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhaldsmanager.so \
+    vendor/nubia/nx611j/proprietary/vendor/lib/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpcp.so \
+    vendor/nubia/nx611j/proprietary/vendor/lib/libwfdmmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice.so \
+    vendor/nubia/nx611j/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwms.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwqe.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
@@ -926,6 +967,9 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.1_vendor.so \
+    vendor/nubia/nx611j/proprietary/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
+    vendor/nubia/nx611j/proprietary/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.wifidisplayhal@1.0-impl.so \
+    vendor/nubia/nx611j/proprietary/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.api@1.0.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.constants@1.0.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.constants@2.0.so \
@@ -1169,6 +1213,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpplibrary.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpptestutils.so \
+    vendor/nubia/nx611j/proprietary/vendor/lib64/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhdcpcp.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
@@ -1225,6 +1270,7 @@ PRODUCT_PACKAGES += \
     libloc_api_v02 \
     QtiSystemService \
     QtiTelephonyService \
+    WfdService \
     datastatusnotification \
     embms \
     ims \
@@ -1236,4 +1282,5 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm \
     SVIService \
     TimeService \
+    WfdCommon \
     qcrilhook
