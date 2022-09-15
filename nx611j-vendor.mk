@@ -409,9 +409,7 @@ PRODUCT_PACKAGES += \
     qti-telephony-common \
     vendor.qti.gnss@3.0-service
 PRODUCT_COPY_FILES += \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libGPTEE_system.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPTEE_system.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libNubiaImageAlgorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libNubiaImageAlgorithm.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libQTEEConnector_system.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQTEEConnector_system.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_beautyshot.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libarcsoft_beautyshot_image_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_beautyshot_image_algorithm.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libarcsoft_beautyshot_video_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_beautyshot_video_algorithm.so \
@@ -420,16 +418,13 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libnubia_effect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnubia_effect.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrueportrait.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libAlgorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlgorithm.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libAltek_Alignment.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAltek_Alignment.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libBigAperture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBigAperture.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libBuffer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBuffer.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib64/libGPTEE_system.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_system.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libIndependenceUtil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libIndependenceUtil.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libNubiaImageAlgorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libNubiaImageAlgorithm.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libPrettyWaterMark.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPrettyWaterMark.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib64/libQTEEConnector_system.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_system.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_beautyshot.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libarcsoft_beautyshot_image_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_beautyshot_image_algorithm.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libarcsoft_beautyshot_video_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_beautyshot_video_algorithm.so \
@@ -456,12 +451,10 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libswresample.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswresample.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libswscale.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswscale.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrueportrait.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/nubia/nx611j/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/nubia/nx611j/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
     vendor/nubia/nx611j/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/nubia/nx611j/proprietary/vendor/bin/hw/android.hardware.keymaster@3.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@3.0-service-qti \
-    vendor/nubia/nx611j/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
     vendor/nubia/nx611j/proprietary/vendor/bin/hw/vendor.sw.swfingerprint@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.sw.swfingerprint@1.0-service \
     vendor/nubia/nx611j/proprietary/vendor/bin/qfp-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/qfp-daemon \
     vendor/nubia/nx611j/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
@@ -482,7 +475,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/etc/camera/s5k4e8_NX611J_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k4e8_NX611J_chromatix.xml \
     vendor/nubia/nx611j/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/nubia/nx611j/proprietary/vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@3.0-service-qti.rc \
-    vendor/nubia/nx611j/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
     vendor/nubia/nx611j/proprietary/vendor/etc/init/vendor.sw.swfingerprint@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sw.swfingerprint@1.0-service.rc \
     vendor/nubia/nx611j/proprietary/vendor/etc/qdcm_calib_data_jdi_hx83112a_1080_2160_5p65_video_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_jdi_hx83112a_1080_2160_5p65_video_dsi_panel.xml \
     vendor/nubia/nx611j/proprietary/vendor/etc/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf \
@@ -535,14 +527,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib/hw/gatekeeper.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.sdm660.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/hw/keystore.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/keystore.sdm660.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libteeclientjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteeclientjni.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPTEE_vendor.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel_svc.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQTEEConnector_vendor.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSecureUILib.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libStDrvInt.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libacdbmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbmapper.so \
@@ -559,7 +544,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbase64.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libcalibverify.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcalibverify.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libcalmodule_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcalmodule_common.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
@@ -655,11 +639,8 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib/libchromatix_s5k4e8_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4e8_postproc.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libchromatix_s5k4e8_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4e8_preview.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libchromatix_s5k4e8_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k4e8_snapshot.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libcppf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcppf.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libdepthmapwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdepthmapwrapper.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libdrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrc.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmfs.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmtime.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libdualcameraddm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcameraddm.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libfastcvadsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvadsp_stub.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
@@ -672,7 +653,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterprovision.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterutils.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-hdcpmgr.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-qcamera.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_c2d_module.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_cpp_module.so \
@@ -852,15 +832,12 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib/libois_bu63165.so:$(TARGET_COPY_OUT_VENDOR)/lib/libois_bu63165.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libois_lc898122.so:$(TARGET_COPY_OUT_VENDOR)/lib/libois_lc898122.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/liboptizoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboptizoom.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqisl.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libqomx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_core.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libqomx_jpegdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegdec.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc_pipe.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libremosaic_daemon.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib/librmp.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmb.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor_stub.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon.so \
@@ -875,25 +852,15 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib/libscvePanorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscvePanorama.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libscvePanorama_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscvePanorama_lite.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdedrm.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui_svcsock.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libseemore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libseemore.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor1.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_reg.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsi.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libts_detected_face_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libts_detected_face_hal.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libts_face_beautify_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libts_face_beautify_hal.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtzdrmgenprov.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libvideobokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideobokeh.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoutils.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/qcdrm/playready/lib/libtzplayready_customer.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcdrm/playready/lib/libtzplayready_customer.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so \
@@ -916,7 +883,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fingerprint@1.0.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/vendor.qti.hardware.qteeconnector@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qteeconnector@1.0_vendor.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so \
@@ -924,13 +890,10 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib64/hw/gatekeeper.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.sdm660.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/hw/keystore.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/keystore.sdm660.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libteeclientjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteeclientjni.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/hw/vendor.sw.swfingerprint@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.sw.swfingerprint@1.0-impl.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel_svc.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
@@ -943,7 +906,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparsers.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib64/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbase64.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libcalmodule_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcalmodule_common.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libchromaflash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromaflash.so \
@@ -956,7 +918,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterprovision.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib64/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-hdcpmgr.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_frame_algorithm.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libmmcamera2_is.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_is.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libmmcamera2_q3a_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_q3a_core.so \
@@ -971,7 +932,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libqfp-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqfp-service.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqisl.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigef.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib64/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librmp.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor_stub.so \
@@ -987,17 +947,14 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libscvePanorama.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscvePanorama.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libscvePanorama_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscvePanorama_lite.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libseemore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libseemore.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor1.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_reg.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib64/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsi.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libthermalioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalioctl.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libts_detected_face_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libts_detected_face_hal.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libts_face_beautify_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libts_face_beautify_hal.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libubifocus.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libvideobokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideobokeh.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideoutils.so \
@@ -1008,7 +965,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libshoebox.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qteeconnector@1.0_vendor.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/vendor.sw.swfingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.sw.swfingerprint@1.0.so
 
